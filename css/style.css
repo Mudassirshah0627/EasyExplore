@@ -25,14 +25,14 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #F78536;
+  color: #4DCFCF;
   -webkit-transition: 0.5s, ease;
   -o-transition: 0.5s, ease;
   transition: 0.5s, ease;
 }
 a:hover {
   text-decoration: none;
-  color: #F78536;
+  color: #4DCFCF;
 }
 
 p,  ol {
@@ -563,11 +563,11 @@ figure {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  color: #F78536 !important;
+  color: black ;
 }
 .tabulation input[type="text"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #F78536 !important;
+  color: #4DCFCF;
 }
 .tabulation input[type="text"]::-moz-placeholder {
   /* Firefox 19+ */
@@ -622,8 +622,8 @@ figure {
 }
 .nav-tabs .active a {
   border: none !important;
-  background: #F78536 !important;
-  color: #fff !important;
+  background: #4e4c4b !important;
+  color: #4DCFCF !important;
   font-weight: bold;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1664,7 +1664,7 @@ div.cs-select span {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #F78536;
+  /* background: #F78536; */
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;

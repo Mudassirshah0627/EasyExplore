@@ -563,11 +563,11 @@ background-position: center;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  color: #F78536 !important;
+  color: black;
 }
 .tabulation input[type="text"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #F78536 !important;
+  color: #4DCFCF;
 }
 .tabulation input[type="text"]::-moz-placeholder {
   /* Firefox 19+ */
@@ -622,8 +622,8 @@ background-position: center;
 }
 .nav-tabs .active a {
   border: none !important;
-  background: #F78536 !important;
-  color: #fff !important;
+  /* background: #F78536 !important; */
+  color: #4DCFCF !important;
   font-weight: bold;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
