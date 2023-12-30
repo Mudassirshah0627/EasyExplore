@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyExplore - Trip Details</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ------------------navbar-------------------------- -->
+    <div class="navbar">
+      <div class="logo"><img src="/img/logo.png" alt="" /> EasyExplore</div>
+
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li><a href="/blog.html">Blogs</a></li>
+        <li><a href="/contactUs.html">Contact Us</a></li>
+      </ul>
+
+      <div class="top-btn">
+        <a href="trip.html" class="h-btn">Plan a Trip</a>
+      </div>
+    </div>
+
+    <!-- --------------------------------------trip section-------------------- -->
+
+    <!-- <section class="trip">
+    <div id="trip-container">
+        <h1>Plan a New Trip</h1>
+    
+        <div class="input-group">
+            <label for="location">Where to?</label>
+            <input type="text" id="location" placeholder="Enter location">
+            
+            <img src="location-icon.png" alt="Location Icon" width="20" height="20">
+        </div>
+    
+        <div class="input-group">
+            <div class="date-container">
+                <div class="date-input">
+                    <label for="date-range">Date Range</label>
+                    <input type="text" id="date-range" placeholder="Start Date - End Date" readonly>
+                </div>
+    
+                <div class="date-separator"></div>
+    
+                <div class="date-input">
+                    <input type="date" id="start-date">
+                </div>
+            </div>
+        </div>
+    
+        <button onclick="planTrip()" class="h-btn">Plan a Trip</button>
+    </div>
+    
+    <script>
+        function planTrip() {
+            // Add your JavaScript logic here
+            alert('Trip planned!'); // Example alert, replace with actual logic
+        }
+    </script>
+
+</section> -->
+    <section class="trip">
+      <div id="trip-container">
+        <h1>Plan a New Trip</h1>
+
+        <div class="input-group">
+          <label for="location">Where to?</label>
+          <input
+            type="text"
+            id="location"
+            class="custom-input"
+            placeholder="Enter location"
+          />
+          <!-- <textarea id="location-details" class="custom-textarea" placeholder="Location details"></textarea> -->
+          <!-- <img src="location-icon.png" alt="Location Icon" width="20" height="20"> -->
+        </div>
+
+        <div class="input-group">
+          <label for="start-date">Start Date</label>
+          <input type="date" id="start-date" class="custom-input" />
+        </div>
+
+        <div class="input-group">
+          <label for="end-date">End Date</label>
+          <input type="date" id="end-date" class="custom-input" />
+        </div>
+
+        <!-- <button onclick="planTrip()" class="h-btn1"  >  -->
+        <a href="/explore.html" class="h-btn1">plan a Trip</a>
+
+        <div id="date-range-display"></div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document
+            .getElementById("start-date")
+            .setAttribute("style", "color: rgb(167, 163, 163);");
+          document
+            .getElementById("end-date")
+            .setAttribute("style", "color: rgb(167, 163, 163);");
+
+          // Add event listener to the "Plan a Trip" button
+          document
+            .getElementById("plan-trip-btn")
+            .addEventListener("click", function () {
+              planTrip(); // Call the planTrip function when the button is clicked
+            });
+        });
+
+        function planTrip() {
+          const startDate = document.getElementById("start-date").value;
+          const endDate = document.getElementById("end-date").value;
+
+          const dateRangeDisplay =
+            document.getElementById("date-range-display");
+          dateRangeDisplay.textContent = `Selected Date Range: ${startDate} to ${endDate}`;
+          dateRangeDisplay.style.color = "#C9C2C2";
+        }
+      </script>
+    </section>
+
+    <!-- ----------------------foooter-------- -->
+
+    <section class="footer">
+      <footer class="footer">
+        <div class="footerrow">
+          <div class="footercol">
+            <div class="logo1">
+              <img src="/img/logo.png" alt="" /> EasyExplore
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur <br />
+              adipisicing elit. Eum, hic.
+            </p>
+
+            <!-- <div class="h">
+                <a href="#"><img src="/img/linkedin.png" alt=""></a>
+                <a href="#"><img src="/img/facebook-app-symbol.png" alt=""></a>
+                <a href="#"><img src="/img/instagram.png" alt=""></a>
+            </div> -->
+
+            <div class="links">
+              <a href=""> <img src="/img/facebook-app-symbol.png" alt="" /></a>
+              <a href=""> <img src="img/instagram.png" alt="" /></a>
+              <a href=""> <img src="img/linkedin.png" alt="" /></a>
+              <a href=""> <img src="/img/youtube.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="footercol">
+            <h1>Quick Links</h1>
+            <a href=""> <p>Home</p></a>
+            <a href=""> <p>About Us</p></a>
+            <a href=""> <p>Services</p></a>
+            <a href=""> <p>Blogs</p></a>
+            <a href=""> <p>Contact Us</p></a>
+          </div>
+
+          <div class="footer-content">
+            <div class="footer-item">
+              <img src="/img/phone.png" alt="Address Icon" />
+              <p>+92 34 56677 888</p>
+            </div>
+            <div class="footer-item">
+              <img src="/img/location.png" alt="Location Icon" />
+              <p>xyz, Pakistan</p>
+            </div>
+            <div class="footer-item">
+              <img src="/img/email.png" alt="Email Icon" />
+              <p>easyexplore@gmail.com</p>
+            </div>
+            <div class="footer-item">
+              <img src="/img/clock.png" alt="Clock Icon" />
+              <p>7:00 am - 11:00 pm</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

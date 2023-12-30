@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyExplore - Plan Your Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ------------------navbar-------------------------- -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="/img/logo.png" alt=""> EasyExplore
+        </div>
+
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- <div class="top-btn">
+            <a href="trip.html" class="h-btn">Plan a Trip</a>
+        </div> -->
+
+    </div>
+
+    <!-- -----------slider section---------- -->
+    <!--     
+       <div class="crousel-container">
+        <div class="crousel"> -->
+    <!-- <div class="slider">
+        <img src="images/slider 1.PNG" alt="">
+
+    </div> -->
+    <!-- </div>
+    </div> -->
+
+    <!-- ------------------------side bar------------- -->
+
+    <div class="mainexplorepage">
+        <div class="side-bar">
+            <div class="Ai">
+                <img src="/img/sparkleforAI.png" alt="">
+                <a href=""> <span> AI Assistant</span> </a>
+            </div>
+
+            <div class="explore-text">
+                <h6>Explore</h6>
+                <hr>
+                <h6>Notes</h6>
+                <hr>
+                <h6>Places to Visit</h6>
+                <hr>
+            </div>
+
+            <div class="schedule-sidebar">
+                <h2>Schedule</h2>
+                <h6>Tues, 12/23</h6>
+                <h6>Wed, 13/23</h6>
+
+                <h6>Thurs, 14/23</h6>
+
+                <h6>Fri, 15/23</h6>
+
+            </div>
+        </div>
+
+        <div class="manualTourPlan">
+            <h1>Plan Your Tour Here! </h1>
+            
+            <div class="explore">
+
+              <div class="exploreheading">
+                <img src="/img/down-arrow.png" alt="">
+                <h2>Explore</h2>
+              </div>
+                <div class="explorrow">
+                    <div class="exploreimg">
+                        <img src="/img/i1.jpg" alt="">
+                        <h3>Top Places to visit in Pakistan</h3>
+                    </div>
+
+
+                    <div class="exploreimg">
+                        <img src="/img/i1.jpg" alt="">
+                        <!-- <div class="exploreheading"> -->
+                        <h3>Search hotels and Transparent <br> pricing</h3>
+                
+                    </div>
+
+
+                    <div class="exploreimg">
+                        <img src="/img/i1.jpg" alt="">
+                        <h3>One day In Islamabad</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ----notes----- -->
+
+
+            <div class="Notes">
+                <div class="exploreheading">
+                    <img src="/img/down-arrow.png" alt="">
+                    <h2>Notes</h2>
+                  </div>
+                <div class="notestextarea">
+             <!-- <textarea name="hhh" id="" cols="30" rows="10"></textarea> -->
+             <input type="text" value="" placeholder="Write or paste anything here: how to get around ,tips?">
+                </div>
+
+                <a href="" class="btn"> Save</a>
+                <hr>
+              </div>
+
+              <div class="places">
+
+                <div class="exploreheading">
+                    <img src="/img/down-arrow.png" alt="">
+                    <h2>Places to visit</h2>
+                  </div>
+
+                  <div class="places-textarea">
+                    <!-- <textarea name="hhh" id="" cols="30" rows="10"></textarea> -->
+
+                    <input type="text" value="" placeholder="Add a place">
+                       </div>
+                       
+                       <div class="places-scrollable">
+                        <!-- Add your new divs here -->
+                        <div class="place-item">
+                            <img src="/img/slider2.jpg" alt="Place Image">
+                            <span>Minar e Pakistan   </span>
+                            <span class="add-icon">   +</span>
+                        </div>
+                        <div class="place-item">
+                            <img src="/img/slider2.jpg" alt="Place Image">
+                            <span>Minar e Pakistan   </span>
+                            <span class="add-icon">   +</span>
+                        </div>
+                        <div class="place-item">
+                            <img src="/img/slider2.jpg" alt="Place Image">
+                            <span>Minar e Pakistan   </span>
+                            <span class="add-icon">   +</span>
+                        </div>
+                       
+                        <!-- Repeat the above div as needed -->
+                    </div>
+                    
+                
+                    <hr>
+              </div>
+
+        
+    </div>
+    </div>
+
+    <!-- ----------------------foooter-------- -->
+
+
+
+
+
+    <script>
+        // Add an event listener for the add-icon
+        document.querySelectorAll('.add-icon').forEach(function (icon) {
+            icon.addEventListener('click', function () {
+                // Add the clicked place to the input area (places-textarea)
+                const placeText = this.previousElementSibling.innerText;
+                document.querySelector('.places-textarea input').value = placeText;
+            });
+        });
+    </script>
+
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
